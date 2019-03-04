@@ -15,12 +15,12 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
       return Object.assign({}, state, {
-        count: state.count + 1
+        count: state.count + action.add
       })
     // Fill in the body of this case
     case DECREMENT: 
       return Object.assign({}, state, {
-        count: state.count - 1
+        count: state.count - action.subtract 
       })
     // Fill in the body of this case
     default:
