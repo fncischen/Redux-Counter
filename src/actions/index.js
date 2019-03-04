@@ -10,11 +10,17 @@ export const DECREMENT = 'DECREMENT';
 // is left to the reducer(s).
 
 export const increment = () => {
+  return {
     add: 1
+  }
+    
   // Fill in this function
 };
 
 export const decrement = () => {
-  subtract: 1 
+  return {
+    subtract: 1 
+  }
+  
   // Fill in this function
 };
